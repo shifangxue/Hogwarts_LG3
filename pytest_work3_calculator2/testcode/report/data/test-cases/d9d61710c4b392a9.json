@@ -1,0 +1,149 @@
+{
+  "uid" : "d9d61710c4b392a9",
+  "name" : "test_add_int[5-5-101]",
+  "fullName" : "test_demo1.TestCal#test_add_int",
+  "historyId" : "56250a3a96ad155307cda485c749d110",
+  "time" : {
+    "start" : 1597652829363,
+    "stop" : 1597652829365,
+    "duration" : 2
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 实际结果10与预期结果不一致101\nassert 10 == 101",
+  "statusTrace" : "self = <pytest_work3_calculator2.testcode.test_demo1.TestCal object at 0x0000000003C948E0>, a = 5, b = 5, expected = 101\n\n    @pytest.mark.run(order=1)\n    @pytest.mark.parametrize([\"a\", \"b\", \"expected\"], get_datas(\"add\", \"intdatas\"))\n    def test_add_int(self, a, b, expected):\n        print(\"test_add_int\")\n        actual = self.cal.add(a, b)\n>       assert actual == expected, f\"实际结果{actual}与预期结果不一致{expected}\"\nE       AssertionError: 实际结果10与预期结果不一致101\nE       assert 10 == 101\n\ntest_demo1.py:81: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "updown",
+    "time" : {
+      "start" : 1597652829361,
+      "stop" : 1597652829362,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1597652829337,
+      "stop" : 1597652829337,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 实际结果10与预期结果不一致101\nassert 10 == 101",
+    "statusTrace" : "self = <pytest_work3_calculator2.testcode.test_demo1.TestCal object at 0x0000000003C948E0>, a = 5, b = 5, expected = 101\n\n    @pytest.mark.run(order=1)\n    @pytest.mark.parametrize([\"a\", \"b\", \"expected\"], get_datas(\"add\", \"intdatas\"))\n    def test_add_int(self, a, b, expected):\n        print(\"test_add_int\")\n        actual = self.cal.add(a, b)\n>       assert actual == expected, f\"实际结果{actual}与预期结果不一致{expected}\"\nE       AssertionError: 实际结果10与预期结果不一致101\nE       assert 10 == 101\n\ntest_demo1.py:81: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c032e27bd243b1c8",
+      "name" : "stdout",
+      "source" : "c032e27bd243b1c8.txt",
+      "type" : "text/plain",
+      "size" : 39
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "updown::0",
+    "time" : {
+      "start" : 1597652830084,
+      "stop" : 1597652830086,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1597652830846,
+      "stop" : 1597652830846,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "suite",
+    "value" : "test_demo1"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCal"
+  }, {
+    "name" : "host",
+    "value" : "DEEP-2020QPCAMS"
+  }, {
+    "name" : "thread",
+    "value" : "1092-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_demo1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "5"
+  }, {
+    "name" : "b",
+    "value" : "5"
+  }, {
+    "name" : "expected",
+    "value" : "101"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=1)" ]
+  },
+  "source" : "d9d61710c4b392a9.json",
+  "parameterValues" : [ "5", "5", "101" ]
+}

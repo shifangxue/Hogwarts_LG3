@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: 实际结果10与预期结果不一致101\nassert 10 == 101",
+      "children" : [ {
+        "name" : "test_add_int[5-5-101]",
+        "uid" : "d9d61710c4b392a9",
+        "parentUid" : "58c6cb80e5d1a65c62231ebdea30d632",
+        "status" : "failed",
+        "time" : {
+          "start" : 1597652829363,
+          "stop" : 1597652829365,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5", "5", "101" ]
+      } ],
+      "uid" : "58c6cb80e5d1a65c62231ebdea30d632"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

@@ -27,25 +27,30 @@ class TestCase:
     def teardown(self):
         print("计算结束")
 
+  
     def setup_class(self):
         self.cal = Calculator()
 
+	
     def teardown_class(self):
         del self.cal
 
     """测试整形数据相加"""
+    @pytest.mark.add
     @pytest.mark.parametrize(["a", "b", "expected"], get_value("add", "intdatas"))
     def test_add_int(self, a, b, expected):
         actual = self.cal.add(a, b)
         assert actual == expected, f"实际结果{actual}与预期结果不一致{expected}"
 
     """测试浮点型数字相加"""
+    @pytest.mark.add
     @pytest.mark.parametrize("a, b, expected", get_value("add", "floatdatas"))
     def test_add_float(self, a, b, expected):
         actual = self.cal.add(a, b)
         assert actual == expected, f"实际结果{actual}与预期结果不一致{expected}"
 
     """测试输入非数字值时，是否抛出TypeError异常"""
+    @pytest.mark.add
     @pytest.mark.parametrize("a, b",get_value("add", "raisevalue"))
     def test_add_raise(self, a, b):
         with pytest.raises(TypeError) as e:
