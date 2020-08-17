@@ -5,6 +5,7 @@
 3、本地生成测试报告
 
 本次测试使用pytest-ordering插件控制用例的执行顺序
+    @pytest.mark.run(order=ordernum)
     每个测试方法分别使用不同类型的有效与无效等价划分取值，控制用例执行顺序为加减乘除
 """
 import pytest
