@@ -61,7 +61,7 @@ class TestCal:
         actual = self.cal.div(a, b)
         assert actual == expected, f"实际结果{actual}与预期结果不一致{expected}"
 
-    """测试被0除时，是否抛出ZeroDivisionError异常"""
+    # 测试被0除时，是否抛出ZeroDivisionError异常
     @pytest.mark.run(order=4)
     @pytest.mark.parametrize("a, b", get_datas("div", "raisevalue"))
     def test_div_raise(self, a, b):
