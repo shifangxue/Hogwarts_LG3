@@ -1,7 +1,7 @@
 import pytest
 import yaml
 
-from app_combat1.page.main_page import MainPage
+from app_combat2.page.main_page import MainPage
 from app_combat2.test_case.read import read_data
 
 

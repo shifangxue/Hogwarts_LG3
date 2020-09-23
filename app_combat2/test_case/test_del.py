@@ -6,8 +6,7 @@
     3.不同的情况调用不同的方法实现删除和断言删除是否成功（或查找成员是否添加好友）
 要求：将find_element/ click /send_keys / text 重新封装
 """
-
-from app_combat1.page.main_page import MainPage
+from app_combat2.page.main_page import MainPage
 
 
 class TestDel:
@@ -24,3 +23,7 @@ class TestDel:
 
         text = search.no_result('乔峰')
         assert '无搜索结果' == text
+
+    def test_attribute(self):
+        search = self.main.go_to_contact().go_to_search()
+        print("is_displayed:", search.func("乔峰").is_displayed())

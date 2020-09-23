@@ -1,4 +1,4 @@
-# Hogwarts_LG3/app_combat2
-App 企业微信实战（二）--作业路径
+# Hogwarts_LG3/weixin_request1
+企业微信接口实战（一）--作业路径
 
-./app_combat2/test_case/test_del.py
+./weixin_request1/test/test_department.py
